@@ -32,3 +32,129 @@ const choices = new Choices(element, {
   placeholder: true,
   itemSelectText: '',
 });
+// slider
+// const swiper = new Swiper('.swiper-container', {
+//   speed: 400,
+//   spaceBetween: 100,
+// });
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+
+  allowTouchMove: true,
+  slidesPerView: 3,
+  slidesPerGroup: 1,
+  spaceBetween: 50,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
+
+swiper.on('slideChange afterInit init', function () {
+  let currentSlide = this.activeIndex - 2;
+  if (currentSlide > this.slides.length / 2) currentSlide = 1;
+  if (currentSlide < 1) currentSlide = 6;
+  console.log(this.activeIndex);
+  document.querySelector('.swiper-counter').innerHTML = `
+    <span class="swiper-counter__current">
+    ${currentSlide}
+    </span> 
+    / 
+    <span class="swiper-counter__total">
+        ${this.slides.length / 2}
+    </span>`;
+});
+swiper.init();
+
+//
+const swiper2 = new Swiper('.swiper2', {
+  // Optional parameters
+
+  allowTouchMove: false,
+  slidesPerView: 3,
+  slidesPerGroup: 1,
+  spaceBetween: 50,
+  loop: true,
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
+  autoplay: {
+    delay: 4500,
+    disableOnInteraction: false,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
+
+const swiper3 = new Swiper('.swiper3', {
+  // Optional parameters
+
+  allowTouchMove: false,
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 50,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
+//
+$('.accordion').accordion({
+  heightStyle: 'content',
+  collapsible: 'true',
+  active: 1,
+});

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/choices.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -126,127 +130,476 @@
     </section>
     <section class="gallery section">
       <div class="gallery__frame frame">
-        <div class="gallery-filters filters">
-          <div class="gallery__block">
-            <h2 class="filters__heading heading heading--white">lorem</h2>
+        <h2 class="filters__heading heading heading--white">lorem</h2>
+        <div class="gallery__parts">
+          <div class="gallery__left-block">
+            <div class="gallery-filters filters">
+              <div class="gallery__block">
+                <div class="gallery__select main__select">
+                  <select name="select" id="select" class="select">
+                    <option value="">Фильтр</option>
+                    <option>Живопись</option>
+                    <option>lorem1</option>
+                    <option>lorem2</option>
+                  </select>
+                </div>
+              </div>
 
-            <div class="gallery__select main__select">
-              <select name="select" id="select" class="select">
-                <option value="">Фильтр</option>
-                <option>Живопись</option>
-                <option>lorem1</option>
-                <option>lorem2</option>
-                <option>lorem3</option>
-                <option>lorem4</option>
-                <option>lorem5</option>
-              </select>
+              <div class="gallery__check-block">
+                <label for="check1" class="gallery__check castom-check">
+                  <input
+                    type="checkbox"
+                    name="check0"
+                    id="check1"
+                    class="gallery__check-input check"
+                  />
+                  check1
+                  <span class="check-box"></span>
+                </label>
+                <label for="check2" class="gallery__check castom-check">
+                  <input
+                    type="checkbox"
+                    name="check1"
+                    id="check2"
+                    class="gallery__check-input check"
+                  />
+                  check2
+                  <span class="check-box"></span>
+                </label>
+                <label for="check3" class="gallery__check castom-check">
+                  <input
+                    type="checkbox"
+                    name="check2"
+                    id="check3"
+                    class="gallery__check-input check"
+                  />
+                  check3
+                  <span class="check-box"></span>
+                </label>
+              </div>
             </div>
           </div>
+          <div class="gallery__content-block">
+            <!-- мест-->
+            <div class="swiper gallery__swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+              </div>
 
-          <div class="gallery__check-block">
-            <label for="check1" class="gallery__check castom-check">
-              <input
-                type="checkbox"
-                name="check0"
-                id="check1"
-                class="gallery__check-input check"
-              />
-              check1
-              <span class="check-box"></span>
-            </label>
-            <label for="check2" class="gallery__check castom-check">
-              <input
-                type="checkbox"
-                name="check1"
-                id="check2"
-                class="gallery__check-input check"
-              />
-              check2
-              <span class="check-box"></span>
-            </label>
-            <label for="check3" class="gallery__check castom-check">
-              <input
-                type="checkbox"
-                name="check2"
-                id="check3"
-                class="gallery__check-input check"
-              />
-              check3
-              <span class="check-box"></span>
-            </label>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <!-- castom counter -->
+              <div class="swiper-counter"></div>
+            </div>
           </div>
-        </div>
-        <div class="gallery__content-block">
-          <!-- место под слайдер -->
         </div>
       </div>
     </section>
     <section class="catalog section">
       <div class="frame">
-        <h2 class="catalog__heading heading"></h2>
+        <h2 class="catalog__heading heading">Lorem</h2>
         <div class="catalog__txt-block txt-block">
-          <p class="catalog__txt txt"></p>
+          <p class="catalog__txt txt">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi laborum modi
+            quasi! Illum ut accusamus ex eligendi, mollitia quos corporis reiciendis,
+            fugiat, aspernatur sit aperiam qui nemo quod illo quas! Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Architecto, ducimus, corrupti aliquid
+            exercitationem asperiores culpa minima magni eveniet pariatur sapiente commodi
+            a mollitia necessitatibus veritatis quo illo vero. Nam, recusandae.
+          </p>
         </div>
-
-        <div class="catalog__double-block double">
-          <div class="double__first first">
-            <div class="first__main-info-block">
-              <div class="first__img-box">
-                <!-- место для картинки бэкгроундом -->
+        <div class="catalog__parts-block">
+          <div class="catalog__double-block double">
+            <div class="double__first first">
+              <div class="first__main-info-block">
+                <div class="first__img-box">
+                  <!-- место для картинки бэкгроундом -->
+                </div>
+                <h3 class="first__img-about img-heading">Lorem, ipsum.</h3>
+                <p class="first__date txt--gray">Lorem ipsum dolor sit amet.</p>
+                <p class="first__text txt">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, fuga
+                  eligendi. Quis iusto praesentium recusandae. Totam vitae sapiente
+                  obcaecati quaerat, cupiditate voluptatibus eius laborum voluptas
+                  doloribus reprehenderit minus optio ea. Blanditiis provident cumque
+                  veritatis, rerum iure vitae reprehenderit similique error! Maiores autem
+                  id, dicta fugiat illo rem, explicabo delectus repellendus atque
+                  architecto quae nisi, veniam eum molestias facilis vero eos? Quod
+                  debitis mollitia quo, esse veritatis odit exercitationem consequatur
+                  quis, alias aperiam facere, excepturi accusamus suscipit nisi dolores
+                  optio illo in! Maxime adipisci, ad quasi quisquam iusto praesentium
+                  ullam placeat!
+                </p>
               </div>
-              <h3 class="first__img-about img-heading"></h3>
-              <p class="first__date txt--gray"></p>
-              <p class="first__text txt"></p>
             </div>
           </div>
-        </div>
-        <div class="double__second second">
-          <!-- место под аккордион  -->
+          <div class="double__second second">
+            <!-- место под аккордион  -->
+            <ul class="second__list accordion">
+              <li class="second__item ac" tabindex="0">
+                <div class="ac-block">
+                  <h3 class="ac-header" tabindex="-1">Lorem ipsum dolor sit amet.</h3>
+                </div>
+
+                <ul class="card__ul ac-trigger">
+                  <li class="card__item">Lorem, ipsum.</li>
+                  <li class="card__item">Lorem, ipsum.</li>
+                  <li class="card__item">Lorem, ipsum.</li>
+                  <li class="card__item">Lorem, ipsum.</li>
+                  <li class="card__item">Lorem, ipsum.</li>
+                  <li class="card__item">Lorem, ipsum.</li>
+                  <li class="card__item">Lorem, ipsum.</li>
+                  <li class="card__item">Lorem, ipsum.</li>
+                  <li class="card__item">Lorem, ipsum dolor.</li>
+                  <li class="card__item">Lorem, ipsum.</li>
+                  <li class="card__item">Lorem, ipsum.</li>
+                  <li class="card__item">Lorem, ipsum.</li>
+                  <li class="card__item">Lorem, ipsum.</li>
+                  <li class="card__item">Lorem, ipsum.</li>
+                  <li class="card__item">Lorem, ipsum.</li>
+                  <li class="card__item">Lorem, ipsum.</li>
+                </ul>
+                <div class="second__img-block">
+                  <!--  -->
+                  <div class="second__ico"></div>
+                </div>
+              </li>
+              <li class="second__item ac" tabindex="0">
+                <div class="ac-block">
+                  <h3 class="ac-header" tabindex="-1">Lorem ipsum dolor sit amet.</h3>
+                </div>
+                <p class="ac-trigger">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+                  deserunt nostrum doloremque expedita error ut quos facere distinctio
+                  eveniet quia corrupti porro culpa, nesciunt ab optio impedit. Explicabo,
+                  nam voluptates.
+                </p>
+
+                <div class="second__img-block">
+                  <!--  -->
+                  <div class="second__ico"></div>
+                </div>
+              </li>
+              <li class="second__item ac" tabindex="0">
+                <div class="ac-block">
+                  <h3 class="ac-header">Lorem ipsum dolor sit.</h3>
+                </div>
+                <p class="ac-trigger">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+                  deserunt nostrum doloremque Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Voluptatem est dicta totam doloribus? Labore ea, illum
+                  at explicabo obcaecati repellendus doloremque culpa, deleniti deserunt
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit,
+                  quaerat? Aspernatur id assumenda at officia ut aliquam consequuntur
+                  blanditiis tempora expedita ratione! Ratione est dolorem natus illum,
+                  eaque exercitationem praesentium! temporibus fugiat voluptas natus enim
+                  voluptatibus. expedita error ut quos facere distinctio eveniet quia
+                  corrupti porro culpa, nesciunt ab optio impedit. Explicabo, nam
+                  voluptates.
+                </p>
+
+                <div class="second__img-block">
+                  <!--  -->
+                  <div class="second__ico"></div>
+                </div>
+              </li>
+              <li class="second__item ac" tabindex="0">
+                <div class="ac-block">
+                  <h3 class="ac-header">Lorem ipsum dolor sit amet.</h3>
+                </div>
+                <p class="ac-trigger">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+                  deserunt nostrum doloremque expedita error ut quos facere distinctio
+                  eveniet Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci corrupti fugit obcaecati veritatis, quasi dolores delectus
+                  consectetur cum alias nemo illo ipsum unde dolore quis illum
+                  reprehenderit expedita, enim velit? quia corrupti porro culpa, nesciunt
+                  ab optio impedit. Explicabo, nam voluptates.
+                </p>
+
+                <div class="second__img-block">
+                  <!--  -->
+                  <div class="second__ico"></div>
+                </div>
+              </li>
+              <li class="second__item ac" tabindex="0">
+                <div class="ac-block">
+                  <h3 class="ac-header">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <p class="ac-trigger">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+                  deserunt nostrum doloremque expedita error ut quos facere distinctio
+                  eveniet quia corrupti porro culpa, nesciunt ab optio impedit. Explicabo,
+                  nam voluptates.
+                </p>
+
+                <div class="second__img-block">
+                  <div class="second__ico"></div>
+                </div>
+              </li>
+            </ul>
+            <!--  -->
+          </div>
         </div>
       </div>
     </section>
     <section class="events section">
-      <h2 class="events__heading heading">
+      <div class="frame">
+        <h2 class="events__heading heading">lorem</h2>
         <!-- слайдер со сложными картами -->
-      </h2>
+        <div class="events__content">
+          <div class="swiper2 events__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="swiper-card card">
+                  <div class="card__header">
+                    <!-- картинка бэком -->
+                  </div>
+                  <div class="card__content-block">
+                    <div class="card__main-content">
+                      <p class="card__text txt--gray">Lorem ipsum dolor sit amet.</p>
+                      <h3 class="card__heading img-heading">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.№1
+                      </h3>
+                      <p class="card__text txt">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam et
+                        mollitia suscipit unde, maxime aut voluptas, assumenda voluptate
+                        at quos consectetur ea totam ipsum neque, repudiandae ad atque
+                        accusamus deserunt! Odio, voluptatibus iure doloribus excepturi
+                        sunt harum adipisci perferendis totam pariatur animi.
+                      </p>
+                    </div>
+                    <a href="#" class="card__link">Lorem.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card card">
+                  <div class="card__header">
+                    <!-- картинка бэком -->
+                  </div>
+                  <div class="card__content-block">
+                    <div class="card__main-content">
+                      <p class="card__text txt--gray">Lorem ipsum dolor sit amet.</p>
+                      <h3 class="card__heading img-heading">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.№2
+                      </h3>
+                      <p class="card__text txt">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam et
+                        mollitia suscipit unde, maxime aut voluptas, assumenda voluptate
+                        at quos consectetur ea totam ipsum neque, repudiandae ad atque
+                        accusamus deserunt! Odio, voluptatibus iure doloribus excepturi
+                        sunt harum adipisci perferendis totam pariatur animi.
+                      </p>
+                    </div>
+                    <a href="#" class="card__link">Lorem.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card card">
+                  <div class="card__header">
+                    <!-- картинка бэком -->
+                  </div>
+                  <div class="card__content-block">
+                    <div class="card__main-content">
+                      <p class="card__text txt--gray">Lorem ipsum dolor sit amet.</p>
+                      <h3 class="card__heading img-heading">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.№3
+                      </h3>
+                      <p class="card__text txt">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam et
+                        mollitia suscipit unde, maxime aut voluptas, assumenda voluptate
+                        at quos consectetur ea totam ipsum neque, repudiandae ad atque
+                        accusamus deserunt! Odio, voluptatibus iure doloribus excepturi
+                        sunt harum adipisci perferendis totam pariatur animi.
+                      </p>
+                    </div>
+                    <a href="#" class="card__link">Lorem.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card card">
+                  <div class="card__header">
+                    <!-- картинка бэком -->
+                  </div>
+                  <div class="card__content-block">
+                    <div class="card__main-content">
+                      <p class="card__text txt--gray">Lorem ipsum dolor sit amet.</p>
+                      <h3 class="card__heading img-heading">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.№4
+                      </h3>
+                      <p class="card__text txt">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam et
+                        mollitia suscipit unde, maxime aut voluptas, assumenda voluptate
+                        at quos consectetur ea totam ipsum neque, repudiandae ad atque
+                        accusamus deserunt! Odio, voluptatibus iure doloribus excepturi
+                        sunt harum adipisci perferendis totam pariatur animi.
+                      </p>
+                    </div>
+                    <a href="#" class="card__link">Lorem.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card card">
+                  <div class="card__header">
+                    <!-- картинка бэком -->
+                  </div>
+                  <div class="card__content-block">
+                    <div class="card__main-content">
+                      <p class="card__text txt--gray">Lorem ipsum dolor sit amet.</p>
+                      <h3 class="card__heading img-heading">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.№5
+                      </h3>
+                      <p class="card__text txt">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam et
+                        mollitia suscipit unde, maxime aut voluptas, assumenda voluptate
+                        at quos consectetur ea totam ipsum neque, repudiandae ad atque
+                        accusamus deserunt! Odio, voluptatibus iure doloribus excepturi
+                        sunt harum adipisci perferendis totam pariatur animi.
+                      </p>
+                    </div>
+                    <a href="#" class="card__link">Lorem.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card card">
+                  <div class="card__header">
+                    <!-- картинка бэком -->
+                  </div>
+                  <div class="card__content-block">
+                    <div class="card__main-content">
+                      <p class="card__text txt--gray">Lorem ipsum dolor sit amet.</p>
+                      <h3 class="card__heading img-heading">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.№6
+                      </h3>
+                      <p class="card__text txt">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam et
+                        mollitia suscipit unde, maxime aut voluptas, assumenda voluptate
+                        at quos consectetur ea totam ipsum neque, repudiandae ad atque
+                        accusamus deserunt! Odio, voluptatibus iure doloribus excepturi
+                        sunt harum adipisci perferendis totam pariatur animi.
+                      </p>
+                    </div>
+                    <a href="#" class="card__link">Lorem.</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev swiper-button-prev--1 d-none"></div>
+            <div class="swiper-button-next swiper-button-next--2"></div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="projects section">
-      <div class="project__text-block txt-block">
-        <p class="project__txt txt"></p>
-      </div>
-      <h3 class="heading heading--mini progects__heading"></h3>
-      <div class="">
-        <!-- слайдер -->
+      <div class="frame">
+        <h2 class="project__heading heading">Lorem.</h2>
+        <div class="project__text-block txt-block">
+          <p class="project__txt txt">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, fugit
+            voluptates iste error at possimus facilis maiores, sapiente dolorum iusto
+            tenetur! Eum ipsum, odit ab enim dolore illo in fugit. Aut neque, mollitia ut
+            itaque fugit est id, quisquam, pariatur accusamus sequi culpa cum tempore.
+            Harum architecto ratione ullam iste quibusdam sit assumenda modi, temporibus
+            dolore reiciendis vero, nobis voluptas? Eveniet voluptates sequi dolorum,
+            nihil at dignissimos nam pariatur ad sapiente consequuntur nobis quod nesciunt
+            velit molestias, fugit ipsam. Praesentium, totam libero. Facere laudantium
+            explicabo quae beatae error, corrupti nisi. Quasi voluptatum pariatur sint
+            architecto quod ratione, molestias molestiae repellat officia consectetur
+            ipsam. Pariatur nostrum rerum consequatur, ipsa quis facilis magni. Dolorum ut
+            dignissimos neque labore, repudiandae recusandae blanditiis voluptates!
+          </p>
+        </div>
+        <h3 class="heading heading--mini progects__heading">Lorem, ipsum dolor.</h3>
+        <div class="">
+          <!-- слайдер -->
+          <div class="swiper3 gallery__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev swiper-button-prev--3"></div>
+            <div class="swiper-button-next swiper-button-next--3"></div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="connect section">
       <div class="frame connect__frame">
         <div class="connect__contact-block">
           <div class="connect__content-block">
-            <p class=""></p>
-            <p class=""></p>
+            <h3 class="connect__heading heading heading--mini">Lorem.</h3>
+            <p class="connect__text txt">Lorem ipsum dolor sit.</p>
           </div>
           <ul class="connect__contact-forms">
             <!-- сверстать форму -->
-            <li class="connect__get-contact"></li>
-            <li class="connect__get-contact"></li>
-            <li class="connect__get-contact"></li>
+            <form action="#" id="form" autocomplete="off" class="connect__form form">
+              <div class="form__input-box">
+                <input
+                  type="text"
+                  class="form__input form-control"
+                  placeholder=" name"
+                  autocomplete="off"
+                  name="name"
+                  id="name"
+                />
+              </div>
+              <div class="form__input-box">
+                <input
+                  type="tel"
+                  name="tel"
+                  autocomplete="off"
+                  id="tel"
+                  class="form__input form-control"
+                  placeholder="телефон"
+                  data-validate-field="tel"
+                />
+              </div>
+
+              <button class="btn btn--lite form__btn" id="submit-btn">Submit</button>
+            </form>
           </ul>
           <div class="connect__conact-block">
-            <p class=""></p>
+            <p class="connect__txt heading heading--mini">Lorem ipsum dolor sit amet.</p>
             <!-- +svg*2 -->
           </div>
         </div>
       </div>
       <div class="connect__map map">
         <div class="">
-          <div id="map" style="width: 600px; height: 400px"></div>
+          <div id="map" class="map__y" style=""></div>
         </div>
       </div>
     </section>
     <footer class="footer">
       <div class="frame">
-        <a href="#" class="footer__link footer__logo link logo"></a>
+        <a href="#" class="footer__link footer__logo link logo"> lorem LogoPic</a>
       </div>
       <div class="footer__links-block">
         <!-- +2svg -->
@@ -258,6 +611,9 @@
       src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
       type="text/javascript"
     ></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
