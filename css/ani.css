@@ -1,0 +1,35 @@
+.btn:hover {
+  border-color: var(--lite-color);
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+}
+.enter-btn:hover,
+.nav__link:hover {
+  color: var(--lite-color);
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+}
+.header__enter-block:hover svg path {
+  fill: var(--lite-color);
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: var(--lite-color);
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+}
+/* .second__item:hover > * {
+  border: none;
+} */
+.second__item:hover {
+  box-shadow: 0 3px var(--lite-color) inset, 0 -3px var(--lite-color) inset;
+  /* border-bottom: 1px var(--lite-color) solid; */
+
+  transition: box-shadow cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.3s 0.1s;
+}
+.second__item:hover .second__img-block * {
+  background-color: var(--lite-color);
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2 0.06s;
+}
+.btn--lite:hover {
+  border-color: var(--lite-color);
+  background-color: var(--lite-color);
+}

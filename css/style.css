@@ -11,7 +11,8 @@
 }
 :root {
   --main-black: #000;
-  --main-perple: #9d5cd0;
+  --main-color: #ce3e3e;
+  --lite-color: #eccfcf;
   --text-black: #333;
 }
 .header {
@@ -132,9 +133,13 @@
 }
 /*  */
 .full-screen {
-  background: no-repeat url(../source/fullscreen.png);
+  background: no-repeat url(../source/full.jpeg);
 
-  height: 800px;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: top;
 }
 .full-screen__content-block {
   width: 40%;
@@ -186,7 +191,9 @@
   line-height: 25px;
 
   border-radius: 100px;
-  background-color: var(--main-perple);
+  background-color: var(--main-color);
+
+  border: 2px var(--main-color) solid;
   color: #fff;
 
   padding: 15px 35px;
@@ -218,7 +225,7 @@
 }
 /*  */
 .gallery {
-  background: no-repeat url(../source/back-black.jpg);
+  background: no-repeat url(../source/long-back-form.jpg);
 }
 .gallery__left-block {
   width: 100%;
@@ -405,8 +412,8 @@
 .check:checked + .check-box {
   background-size: 20px;
   background-position: center;
-  border-color: #9d5cd0;
-  background: radial-gradient(1em, #9d5cd0 10%, transparent 0%) no-repeat;
+  border-color: var(--main-color);
+  background: radial-gradient(1em, var(--main-color) 10%, transparent 0%) no-repeat;
   background-size: 25%;
   background-repeat: no-repeat;
   background-position: center;
@@ -594,7 +601,7 @@
 }
 .btn--lite {
   background-color: #fff;
-  color: #9d5cd0;
+  color: var(--main-color);
 }
 .form__input {
   font-family: 'Open Sans', sans-serif;
@@ -679,6 +686,7 @@
   width: 100%;
 
   border-bottom: 1px #cacaca solid;
+  z-index: 3;
 }
 
 .second .heading {
@@ -720,13 +728,13 @@
 
 .ui-state-active ~ .second__img-block .second__ico {
   transform: rotate(45deg);
-  border-color: var(--main-perple);
-  background-color: #d1a9f0;
+  border-color: var(--main-color);
+  background-color: var(--lite-color);
 
   transition: transform 0.4s 0.05s, background-color ease 0.5s;
 }
 .ui-state-active ~ .second__img-block .second__ico::after {
-  border-color: var(--main-perple);
+  border-color: var(--main-color);
 
   transition: transform 0.4s 0.05s;
 }
