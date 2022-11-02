@@ -26,6 +26,10 @@
 .header__main-header {
   background-color: var(--main-black);
   padding: 30px 0;
+  z-index: 11;
+}
+.header__main-header * {
+  z-index: 11;
 }
 .frame {
   padding: 0 8.3%;
@@ -98,6 +102,10 @@
 .second-header {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px 0;
+  z-index: 10;
+}
+.second-header * {
+  z-index: 9;
 }
 .second-header__frame {
   display: flex;
@@ -780,15 +788,27 @@
 .card__item {
   margin-right: 4rem;
 }
+.card__link {
+  display: inline;
+  text-decoration: none;
+  max-width: 20%;
+}
 .ui-accordion-header-icon {
   display: none;
 }
 .ac-header {
   margin: 0;
+  display: inline;
 }
 .sb-1 {
   display: none;
 }
 .body--block {
   overflow: hidden;
+}
+.form__input:focus {
+  outline: 2px solid;
+  outline-color: var(--main-color);
+  border: 1px solid;
+  border-color: var(--main-color);
 }

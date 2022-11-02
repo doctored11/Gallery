@@ -10,6 +10,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="css/choices.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/ani.css" />
@@ -65,7 +70,7 @@
               placeholder="Lorem"
             />
           </div>
-          <div class="header__enter-block burger-btn burgerBtn--desable">
+          <div class="header__enter-block burger-btn burgerBtn--desable" tabindex="1">
             <svg
               width="13"
               height="13"
@@ -80,11 +85,11 @@
               />
             </svg>
 
-            <button class="header__btn enter-btn">Enter</button>
+            <button class="header__btn enter-btn" tabindex="-1">Enter</button>
           </div>
         </div>
       </div>
-      <div class="header__second-header second-header">
+      <div class="header__second-header second-header animate__animated">
         <div class="frame second-header__frame">
           <div class="second-header__navigation-block navigation-block">
             <ul class="second-header__nav nav">
@@ -146,7 +151,11 @@
               reprehenderit suscipit voluptate.
             </p>
           </div>
-          <button class="full-screen__btn btn">lorem</button>
+          <button
+            class="full-screen__btn btn animate__animated animate__fast animate__repeat-2"
+          >
+            lorem
+          </button>
         </div>
       </div>
     </section>
@@ -222,12 +231,12 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide slide-art-page" data-art-id="0">Slide 1</div>
+                <div class="swiper-slide slide-art-page" data-art-id="1">Slide 2</div>
+                <div class="swiper-slide slide-art-page" data-art-id="2">Slide 3</div>
+                <div class="swiper-slide slide-art-page" data-art-id="3">Slide 4</div>
+                <div class="swiper-slide slide-art-page" data-art-id="4">Slide 5</div>
+                <div class="swiper-slide slide-art-page" data-art-id="5">Slide 6</div>
               </div>
 
               <!-- If we need navigation buttons -->
@@ -282,7 +291,7 @@
             <!-- место под аккордион  -->
             <ul class="second__list accordion">
               <li class="second__item ac" tabindex="0">
-                <div class="ac-block">
+                <div class="ac-block" tabindex="-1">
                   <h3 class="ac-header" tabindex="-1">Lorem ipsum dolor sit amet.</h3>
                 </div>
 
@@ -310,10 +319,10 @@
                 </div>
               </li>
               <li class="second__item ac" tabindex="0">
-                <div class="ac-block">
-                  <h3 class="ac-header" tabindex="-1">Lorem ipsum dolor sit amet.</h3>
+                <div class="ac-block" tabindex="-1">
+                  <h3 class="ac-header" tabindex="-1">Lorem ipsum dolor 2sit amet.</h3>
                 </div>
-                <p class="ac-trigger">
+                <p class="ac-trigger" tabindex="-1">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
                   deserunt nostrum doloremque expedita error ut quos facere distinctio
                   eveniet quia corrupti porro culpa, nesciunt ab optio impedit. Explicabo,
@@ -326,8 +335,8 @@
                 </div>
               </li>
               <li class="second__item ac" tabindex="0">
-                <div class="ac-block">
-                  <h3 class="ac-header">Lorem ipsum dolor sit.</h3>
+                <div class="ac-block" tabindex="-1">
+                  <h3 class="ac-header" tabindex="-1">Lorem ipsum dolor sit.</h3>
                 </div>
                 <p class="ac-trigger">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
@@ -349,8 +358,8 @@
                 </div>
               </li>
               <li class="second__item ac" tabindex="0">
-                <div class="ac-block">
-                  <h3 class="ac-header">Lorem ipsum dolor sit amet.</h3>
+                <div class="ac-block" tabindex="-1">
+                  <h3 class="ac-header" tabindex="-1">Lorem ipsum dolor sit amet.</h3>
                 </div>
                 <p class="ac-trigger">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
@@ -368,8 +377,10 @@
                 </div>
               </li>
               <li class="second__item ac" tabindex="0">
-                <div class="ac-block">
-                  <h3 class="ac-header">Lorem ipsum dolor sit amet consectetur.</h3>
+                <div class="ac-block" tabindex="-1">
+                  <h3 class="ac-header" tabindex="-1">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </h3>
                 </div>
                 <p class="ac-trigger">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
@@ -653,6 +664,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <script src="js/initialization.js"></script>
+    <script type="text/javascript" src="js/art.JSON"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

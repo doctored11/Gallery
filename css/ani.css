@@ -1,3 +1,6 @@
+*:focus {
+  outline: none;
+}
 .btn:hover {
   border-color: var(--lite-color);
   transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
@@ -39,4 +42,49 @@
 }
 .swiper-slide:hover {
   background-color: blue;
+}
+.up {
+  transform: translateY(-50px);
+}
+.nav__link:focus,
+.burger-btn:focus,
+.header__link:focus {
+  outline: none;
+  color: #fff;
+  background-color: var(--main-color);
+}
+.search-block__input:focus {
+  outline: none;
+  border-color: var(--lite-color);
+}
+.btn:focus {
+  outline: none;
+  border: 1px var(--main-color) solid;
+  box-shadow: 0 0 0 3px #fff inset;
+  transform: scale(105%);
+}
+.choices[data-type*='select-one']:focus {
+  border: 2px solid var(--main-color);
+}
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+  outline: none;
+  background-color: var(--lite-color);
+}
+.second__item:focus {
+  outline: none;
+}
+.second__item:focus .ac-header {
+  background-color: var(--main-color);
+}
+.second__item:focus .second__img-block .second__ico {
+  background-color: var(--lite-color);
+}
+.card__link:focus {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.link:focus {
+  outline: none;
+  background-color: var(--main-color);
 }

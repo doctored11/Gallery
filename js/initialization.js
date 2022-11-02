@@ -88,7 +88,7 @@ swiper.on('slideChange afterInit init', function () {
   let currentSlide = this.activeIndex - 2;
   if (currentSlide > this.slides.length / 2) currentSlide = 1;
   if (currentSlide < 1) currentSlide = 6;
-  console.log(this.activeIndex);
+  // console.log(this.activeIndex);
   document.querySelector('.swiper-counter').innerHTML = `
     <span class="swiper-counter__current">
     ${currentSlide}
@@ -127,7 +127,7 @@ const swiper2 = new Swiper('.swiper2', {
       spaceBetween: 30,
       slidesPerView: 3,
     },
-    320: {
+    520: {
       spaceBetween: 30,
       slidesPerView: 2,
     },
