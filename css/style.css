@@ -812,3 +812,60 @@
   border: 1px solid;
   border-color: var(--main-color);
 }
+/*  */
+.card-art {
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  bottom: 0;
+  transform: translateY(-50%);
+
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: #fff;
+  width: 65vw;
+  min-height: 50vh;
+  height: max-content;
+
+  display: flex;
+}
+.cardBack {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 8;
+
+  background-color: rgba(51, 51, 51, 0.412);
+}
+.card__img-block {
+  width: 35%;
+  height: 100%;
+  display: block;
+  background-color: red;
+}
+.card__block {
+  width: 65%;
+  height: 100%;
+  padding: 5rem 2rem 3rem;
+}
+.card__heading {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+}
+.card__txt {
+  line-height: 1rem;
+}
