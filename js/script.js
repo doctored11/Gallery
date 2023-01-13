@@ -102,3 +102,58 @@ function showArtCard() {
     cardBackground.remove();
   });
 }
+
+// выпадающие вещи из второго меню
+
+let arrOfNavLinks = document.querySelectorAll('.nav__nav-link');
+for (let i = 0; i < arrOfNavLinks.length; i++) {
+  arrOfNavLinks[i].addEventListener('mouseover', () => {
+    let dataKey = arrOfNavLinks[i].getAttribute('data-list-menu');
+    console.log(dataKey);
+    createMenuBox(dataKey, i);
+  });
+
+  let sHeader = document.querySelector('.header__second-header');
+}
+
+states_dictionary = {
+  A1: [
+    ['ru_name', 'link'],
+    ['ru_name', 'link'],
+    ['ru_name', 'link'],
+  ],
+  B2: [['ru_name', 'link']],
+  C3: [
+    ['ru_name', 'link'],
+    ['ru_name', 'link'],
+  ],
+  D4: [
+    ['ru_name', 'link'],
+    ['ru_name', 'link'],
+  ],
+  E5: [
+    ['ru_name', 'link'],
+    ['ru_name', 'link'],
+    ['ru_name', 'link'],
+    ['ru_name', 'link'],
+  ],
+};
+
+function createMenuBox(_key, num) {
+  if (arrOfNavLinks[num].children.length > 1) return;
+  const menucard = document.createElement('div');
+  menucard.classList.add('nav__mini-menu');
+  console.log(_key, states_dictionary[_key].length);
+  for (let i = 0; i < states_dictionary[_key].length; ++i) {
+    const menuLink = document.createElement('a');
+    menuLink.classList.add('nav__link-mini');
+    menuLink.href = states_dictionary[_key][i][1];
+    menuLink.textContent = states_dictionary[_key][i][0];
+    menucard.appendChild(menuLink);
+  }
+  menucard.addEventListener('mouseleave', () => {
+    menucard.remove();
+  });
+
+  arrOfNavLinks[num].appendChild(menucard);
+}

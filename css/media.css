@@ -170,6 +170,19 @@
   .header__second-header {
     display: none;
   }
+
+  .gallery__content-block .swiper-button-next {
+    top: 7%;
+    left: 5em;
+  }
+  .gallery__content-block .swiper-button-prev {
+    top: 7%;
+    left: 0;
+  }
+  .gallery__content-block .swiper-counter {
+    left: 2.5em;
+    top: 3%;
+  }
 }
 @media (max-width: 770px) {
   .full-screen__content-block {

@@ -4,7 +4,7 @@
 
 * {
   box-sizing: border-box;
-  /* border: 1px solid rgba(245, 130, 59, 0.803); */
+  border: 1px solid rgba(245, 130, 59, 0.803);
 }
 .d-none {
   display: none !important;
@@ -868,4 +868,19 @@
 }
 .card__txt {
   line-height: 1rem;
+}
+/* 
+ */
+.nav__mini-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 40px;
+}
+
+.nav__link-mini {
+  width: 100%;
+  padding: 10px 0;
+  background-color: green;
 }
