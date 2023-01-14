@@ -115,6 +115,19 @@
   .connect__contact-forms {
     padding: 0;
     margin-bottom: 2rem;
+    width: 100%;
+  }
+  .connect__form {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .form__input {
+    width: 100%;
   }
   .connect__content-block {
     margin-bottom: 2rem;
@@ -182,6 +195,15 @@
   .gallery__content-block .swiper-counter {
     left: 2.5em;
     top: 3%;
+  }
+  .card__content-block {
+    padding: 10px 35px 50px;
+  }
+  .full-screen__text-block {
+    margin-bottom: 0;
+  }
+  .form__input-box {
+    max-width: 30%;
   }
 }
 @media (max-width: 770px) {
