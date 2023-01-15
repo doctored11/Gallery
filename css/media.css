@@ -276,6 +276,15 @@
   .form__input-box:not(:last-child) {
     margin-bottom: 1rem;
   }
+  .double {
+    margin: 0;
+  }
+  .form__input-box {
+    max-width: 50%;
+  }
+  .section {
+    padding: 40px 0;
+  }
 }
 @media (max-width: 550px) {
   .frame {
@@ -377,5 +386,30 @@
   }
   .full-screen__text-block {
     margin-bottom: 2rem;
+  }
+  .full-screen__content-block {
+    padding-top: 0;
+  }
+  .full-screen__btn {
+    width: 100%;
+  }
+  .gallery__content-block .swiper-button-next {
+    top: inherit;
+    bottom: 7%;
+    left: inherit;
+    right: 20%;
+  }
+  .gallery__content-block .swiper-button-prev {
+    top: inherit;
+    bottom: 7%;
+    left: 20%;
+  }
+  .gallery__content-block .swiper-counter {
+    top: inherit;
+    left: 44%;
+    bottom: 7.5%;
+  }
+  .second__img-block {
+    top: 20%;
   }
 }

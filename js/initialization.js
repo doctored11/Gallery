@@ -38,6 +38,7 @@ const choices = new Choices(element, {
 //   spaceBetween: 100,
 // });
 
+const screenWidth = window.screen.width;
 const swiper = new Swiper('.swiper', {
   // Optional parameters
 
@@ -85,9 +86,23 @@ const swiper = new Swiper('.swiper', {
 });
 
 swiper.on('slideChange afterInit init', function () {
-  let currentSlide = this.activeIndex - 2;
-  if (currentSlide > this.slides.length / 2) currentSlide = 1;
-  if (currentSlide < 1) currentSlide = 6;
+  let bufIn = 0;
+
+  if (screenWidth >= 750) bufIn = 1;
+  if (screenWidth >= 1024) bufIn = 2;
+  let length = this.slides.length;
+  console.log(length);
+  if ((length / 2) % 2 == 0) {
+    length = length / 2;
+  } else {
+    length = length / 2 + 1;
+  }
+
+  if (length < 6) length = 6; //!
+
+  let currentSlide = this.activeIndex - bufIn;
+  if (currentSlide > length) currentSlide = 1;
+  if (currentSlide < 1) currentSlide = length;
   // console.log(this.activeIndex);
   document.querySelector('.swiper-counter').innerHTML = `
     <span class="swiper-counter__current">
@@ -95,7 +110,7 @@ swiper.on('slideChange afterInit init', function () {
     </span> 
     / 
     <span class="swiper-counter__total">
-        ${this.slides.length / 2}
+        ${length}
     </span>`;
 });
 swiper.init();

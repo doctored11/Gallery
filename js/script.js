@@ -151,9 +151,9 @@ function createMenuBox(_key, num) {
     menuLink.textContent = states_dictionary[_key][i][0];
     menucard.appendChild(menuLink);
   }
-  menucard.addEventListener('mouseleave', () => {
-    menucard.remove();
-  });
 
   arrOfNavLinks[num].appendChild(menucard);
+  arrOfNavLinks[num].addEventListener('mouseleave', () => {
+    menucard.remove();
+  });
 }
